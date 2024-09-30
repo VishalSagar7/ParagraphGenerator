@@ -15,10 +15,10 @@ const lorem = new LoremIpsum({
 });
 
 function App() {
-  const [numParagraphs, setNumParagraphs] = useState(0); // Default value
+  const [numParagraphs, setNumParagraphs] = useState(0); 
   const [paragraphs, setParagraphs] = useState([]);
 
-  // Handle form submit to generate paragraphs
+
   const handleGenerate = () => {
     const newParagraphs = Array.from({ length: numParagraphs }, () => lorem.generateParagraphs(1));
     setParagraphs(newParagraphs);
